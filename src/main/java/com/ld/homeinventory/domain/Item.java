@@ -5,9 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 /**
  * @author Luisdany Pernillo
@@ -22,9 +20,12 @@ import javax.persistence.Table;
 public class Item {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idItem;
     private String name;
     private String description;
+    @ManyToOne
+    private Room room;
 
 
 }

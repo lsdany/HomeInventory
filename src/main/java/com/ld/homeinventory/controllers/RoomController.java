@@ -1,6 +1,7 @@
 package com.ld.homeinventory.controllers;
 
 import com.ld.homeinventory.domain.Item;
+import com.ld.homeinventory.domain.Room;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,9 +20,11 @@ public class RoomController {
 //    }
 
     @GetMapping("/items")
-    public List<Item> getItem(){
+    public List<Room> getRoom(){
         return null;
     }
+
+
 
     @GetMapping
     public String getDummy(){
