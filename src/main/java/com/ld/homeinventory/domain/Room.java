@@ -13,7 +13,7 @@ import java.util.List;
  */
 
 @Entity
-@Table
+@Table(name = "room")
 @Getter
 @Setter
 @AllArgsConstructor

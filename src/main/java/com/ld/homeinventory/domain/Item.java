@@ -12,7 +12,7 @@ import javax.persistence.*;
  */
 
 @Entity
-@Table
+@Table(name = "item")
 @Getter
 @Setter
 @AllArgsConstructor
